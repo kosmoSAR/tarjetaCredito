@@ -1,5 +1,14 @@
 <div class="card">
     <div class="card-body">
         <h5 class="titulo">LISTAR TARJETA</h5>
+        <table class="table">
+            <tr *ngFor="let tarjeta of tarjetasActivas">
+                <td>{{tarjeta.titular}}</td>
+                <td>{{tarjeta.numeroDeTarjeta}}</td>
+                <td>{{tarjeta.fechaCreacion}}</td>
+                <td><i class="fa-solid fa-pen-to-square cursor text-info"></i></td>
+                <td><i class="fa-solid fa-trash cursor text-danger"></i></td>
+            </tr>
+        </table>
     </div>
 </div>

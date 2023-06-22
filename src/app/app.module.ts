@@ -6,15 +6,16 @@ import { CrearTarjetaComponent } from './components/crear-tarjeta/crear-tarjeta.
 import { ListarTarjetaComponent } from './components/listar-tarjeta/listar-tarjeta.component';
 import { ReactiveFormsModule } from '@angular/forms';
 
+
 @NgModule({
   declarations: [
     AppComponent,
     CrearTarjetaComponent,
-    ListarTarjetaComponent
+    ListarTarjetaComponent,
   ],
   imports: [
     BrowserModule,
-    ReactiveFormsModule
+    ReactiveFormsModule,
   ],
   providers: [],
   bootstrap: [AppComponent]

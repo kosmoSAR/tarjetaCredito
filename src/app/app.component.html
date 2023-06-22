@@ -10,10 +10,10 @@
   </div>
   <div class="row mt-4">
     <div class="col-lg-6">
-      <app-crear-tarjeta></app-crear-tarjeta>
+      <app-crear-tarjeta (parametrosSeleccionados)="adicionarTarjeta($event)"></app-crear-tarjeta>
     </div>
     <div class="col-lg-6">
-      <app-listar-tarjeta></app-listar-tarjeta>
+      <app-listar-tarjeta [tarjetasActivas]="listaTarjetas"></app-listar-tarjeta>
     </div>
   </div>
 </div>

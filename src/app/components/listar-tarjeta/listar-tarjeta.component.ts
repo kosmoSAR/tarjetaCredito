@@ -1,4 +1,6 @@
-import { Component } from '@angular/core';
+import { Component, Input  } from '@angular/core';
+import { TarjetCredito } from 'src/app/models/tarjeta';
+import { Observable } from 'rxjs';
 
 @Component({
   selector: 'app-listar-tarjeta',
@@ -6,5 +8,7 @@ import { Component } from '@angular/core';
   styleUrls: ['./listar-tarjeta.component.css']
 })
 export class ListarTarjetaComponent {
+
+  @Input() tarjetasActivas:any;
 
 }
